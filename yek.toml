@@ -2,6 +2,7 @@ output_dir = "./repo-serialized"
 
 ignore_patterns = [
     "^repo-serialized/",
+    "^Cargo.lock$",
     "^.*\\.txt$",
     "^tests/.*",
     "^benchmarks/",
