@@ -416,7 +416,7 @@ fn write_chunks(
                 }
 
                 debug!("Adding file to buffer");
-                buffer.push_str(&format!("chunk {}\n>>>> {}\n", chunk_idx, rel_path));
+                buffer.push_str(&format!("\n\n\n>>>> {}\n", rel_path));
                 buffer.push_str(&content);
                 buffer.push('\n');
                 used_size += add_size;
@@ -474,7 +474,7 @@ fn write_chunks(
                 }
 
                 debug!("Adding file to buffer");
-                buffer.push_str(&format!("chunk {}\n>>>> {}\n", chunk_idx, rel_path));
+                buffer.push_str(&format!("\n\n\n>>>> {}\n", rel_path));
                 buffer.push_str(&content);
                 buffer.push('\n');
                 used_size += add_size;
